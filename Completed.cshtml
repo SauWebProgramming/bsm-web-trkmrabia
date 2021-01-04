@@ -1,0 +1,70 @@
+﻿
+
+@model PatiShop.Models.Register
+
+@{
+    ViewData["Title"] = "Completed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Completed</h3>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EMail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RePassword)
+
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BirthDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TermsAccepted)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.EMail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.RePassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.BirthDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.TermsAccepted)
+            </td>
+        </tr>
+
+    </tbody>
+</table>
